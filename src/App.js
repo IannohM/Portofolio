@@ -50,7 +50,7 @@ function App() {
     const projects = [
         {
             title: 'Eat and Split Bill',
-            image: '',
+            image: '/eatnsplit.png',
             desc: 'Real-time collaborative task management with drag & drop and live notifications',
             tech: ['React', 'css'],
             live: 'https://friendseatandsplit.netlify.app/',
@@ -59,6 +59,7 @@ function App() {
         },
         {
             title: 'React Quiz App',
+            image: '/quizapp.png',
             desc: 'A sleek quiz app with dynamic questions, timer, and instant feedback built with React.',
             tech: ['React', 'Node.js', 'CSS'],
             live: 'https://app.netlify.com/projects/ultimate-react-quiz-app/overview',
@@ -68,6 +69,7 @@ function App() {
 
         {
             title: 'Pizza Menu',
+            image: '/react-pizza.png',
             desc: 'A modern pizza menu app with real-time updates and order management.',
             tech: ['React', 'css'],
             live: 'https://pizza-menu-678.netlify.app/',
@@ -76,6 +78,7 @@ function App() {
         },
         {
             title: 'UsePopcorns',
+            image: '/usepopcorns.png',
             desc: 'A movie discovery app with personalized recommendations and social features.',
             tech: ['React', 'CSS'],
             live: 'https://usepopcons-netlify.netlify.app/',
@@ -232,12 +235,12 @@ function App() {
                                 >
                                     <Github size={36} />
                                 </a>
-                                <a
+                                {/* <a
                                     href="https://www.linkedin.com/"
                                     className="text-cyan-400 hover:scale-125 transition"
                                 >
                                     <Linkedin size={36} />
-                                </a>
+                                </a> */}
                                 <a
                                     href="mailto:mutukuianmusyoka@gmail.com"
                                     className="text-cyan-400 hover:scale-125 transition"
@@ -282,7 +285,7 @@ function App() {
                         </span>
                     </h2>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-center">
                         {[
                             {
                                 name: 'React',
@@ -314,11 +317,11 @@ function App() {
                                 color: 'from-teal-400 to-cyan-600',
                                 icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
                             },
-                            {
-                                name: 'PHP',
-                                color: 'from-purple-500 to-indigo-600',
-                                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
-                            },
+                            // {
+                            //     name: 'PHP',
+                            //     color: 'from-purple-500 to-indigo-600',
+                            //     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+                            // },
                             {
                                 name: 'MySQL',
                                 color: 'from-orange-400 to-red-600',
@@ -371,13 +374,12 @@ function App() {
                                 <div
                                     className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-30 transition pointer-events-none`}
                                 ></div>
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full  object-cover rounded-2xl rounded-b-none drop-shadow-2xl"
+                                />
                                 <div className="p-8">
-                                    <div className="w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center">
-                                        <Sparkles
-                                            size={36}
-                                            className="text-white"
-                                        />
-                                    </div>
                                     <h3 className="text-2xl font-bold text-white mb-4">
                                         {project.title}
                                     </h3>
