@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
     Github,
-    Linkedin,
     Mail,
     ExternalLink,
     Code2,
@@ -11,7 +10,6 @@ import {
     Menu,
     X,
     ChevronDown,
-    Sparkles,
 } from 'lucide-react';
 import './App.css';
 
@@ -84,6 +82,15 @@ function App() {
             live: 'https://usepopcons-netlify.netlify.app/',
             github: 'https://github.com/IannohM/usePopcorn.git',
             gradient: 'from-red-500 to-pink-500',
+        },
+        {
+            title: 'Frontend Youtube Clone',
+            image: '/youtube.png',
+            desc: 'A responsive YouTube clone with video playback and search functionality.',
+            tech: ['HTML', 'css', 'JavaScript'],
+            live: 'https://ytouube-clone-front.netlify.app/',
+            github: 'https://github.com/IannohM/youtube-clone.git',
+            gradient: 'from-red-500 to-yellow-500',
         },
     ];
 
@@ -377,7 +384,7 @@ function App() {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full  object-cover rounded-2xl rounded-b-none drop-shadow-2xl"
+                                    className="w-full h-60 object-cover rounded-2xl rounded-b-none drop-shadow-2xl"
                                 />
                                 <div className="p-8">
                                     <h3 className="text-2xl font-bold text-white mb-4">
