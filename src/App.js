@@ -50,6 +50,7 @@ function App() {
     const projects = [
         {
             title: 'Eat and Split Bill',
+            image: '',
             desc: 'Real-time collaborative task management with drag & drop and live notifications',
             tech: ['React', 'css'],
             live: 'https://friendseatandsplit.netlify.app/',
@@ -57,12 +58,29 @@ function App() {
             gradient: 'from-violet-500 to-purple-600',
         },
         {
-            title: 'DevConnect',
-            desc: 'Social platform for developers to share projects, blogs, and connect',
-            tech: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
-            live: '#',
-            github: '#',
+            title: 'React Quiz App',
+            desc: 'A sleek quiz app with dynamic questions, timer, and instant feedback built with React.',
+            tech: ['React', 'Node.js', 'CSS'],
+            live: 'https://app.netlify.com/projects/ultimate-react-quiz-app/overview',
+            github: 'https://github.com/IannohM/mordern_quiz_app.git',
             gradient: 'from-blue-500 to-cyan-500',
+        },
+
+        {
+            title: 'Pizza Menu',
+            desc: 'A modern pizza menu app with real-time updates and order management.',
+            tech: ['React', 'css'],
+            live: 'https://pizza-menu-678.netlify.app/',
+            github: 'https://github.com/IannohM/pizza_menu.git',
+            gradient: 'from-orange-500 to-red-500',
+        },
+        {
+            title: 'UsePopcorns',
+            desc: 'A movie discovery app with personalized recommendations and social features.',
+            tech: ['React', 'CSS'],
+            live: 'https://usepopcons-netlify.netlify.app/',
+            github: 'https://github.com/IannohM/usePopcorn.git',
+            gradient: 'from-red-500 to-pink-500',
         },
     ];
 
