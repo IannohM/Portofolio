@@ -65,6 +65,14 @@ const projects = [
         live: 'https://worldwise-netlify.netlify.app/',
         github: 'https://github.com/IannohM/WORLD_WISE.git',
     },
+    {
+        title: 'World Oasis',
+        image: '/wild_oasis.png',
+        desc: 'A  digital platform that lets guests view real-time availability, select specific cabins, and reserve stays instantly. For hotel staff, the software simplifies operations by managing reservations, updating seasonal pricing, and sending automated confirmations from a single dashboard.',
+        tech: ['React', 'Styled Components', 'Supabase'],
+        live: 'https://iannoh-wild-oasis.netlify.app/',
+        github: 'https://github.com/IannohM/the_wild_oasis.git',
+    },
 ];
 
 const capabilities = [
@@ -405,7 +413,7 @@ function App() {
 
                     <div className="contact-actions">
                         <a
-                            className="button button-dark border border-slate-950/70 px-4 py-3"
+                            className="flex gap-4 border-2 border-slate-950/70 px-4 py-3"
                             href="mailto:mutukuianmusyoka@gmail.com"
                         >
                             Get in touch
@@ -413,7 +421,7 @@ function App() {
                         </a>
 
                         <a
-                            className="button button-outline"
+                            className="bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-600/70"
                             href="/IAN_MUSYOKA_MUTUKU_Resume.pdf"
                             target="_blank"
                             rel="noreferrer"
@@ -430,7 +438,12 @@ function App() {
 
                 <span>Designed & built with intention</span>
 
-                <button onClick={() => goTo('home')}>Back to top ↑</button>
+                <button
+                    onClick={() => goTo('home')}
+                    className="text-white bg-slate-950/70 "
+                >
+                    Back to top ↑
+                </button>
             </footer>
         </main>
     );
